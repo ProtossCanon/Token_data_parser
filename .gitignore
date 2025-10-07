@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,c++
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,c++
+# Created by https://www.toptal.com/developers/gitignore/api/cmake,c++,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=cmake,c++,visualstudiocode
 
 ### C++ ###
 # Prerequisites
@@ -35,6 +35,25 @@
 *.out
 *.app
 
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+### CMake Patch ###
+CMakeUserPresets.json
+
+# External projects
+*-prefix/
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -54,5 +73,5 @@
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,c++
+# End of https://www.toptal.com/developers/gitignore/api/cmake,c++,visualstudiocode
 
