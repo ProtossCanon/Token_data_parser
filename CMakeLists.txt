@@ -3,9 +3,10 @@ cmake_minimum_required(VERSION 3.20)
 project(parser)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 20)
 
 add_compile_options(
-    -Werror
+    # -Werror
 
     -Wall
     -Wextra
@@ -25,8 +26,8 @@ add_compile_options(
     -Wsign-promo
 )
 
-add_subdirectory(ssl_certs)
+add_subdirectory(ssl_cert)
+
+add_subdirectory(utils_src)
 
 add_subdirectory(src)
-
-# target_include_directories(data-parcer PRIVATE ssl_certs)
