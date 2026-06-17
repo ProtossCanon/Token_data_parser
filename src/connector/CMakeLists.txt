@@ -1,0 +1,7 @@
+add_subdirectory(Tests)
+
+add_library(MarketDataConnector MarketDataConnector.cpp)
+target_include_directories(MarketDataConnector INTERFACE .)
+
+target_link_libraries(MarketDataConnector PUBLIC LockfreeQueue)
+target_link_libraries(MarketDataConnector PRIVATE ssl_cert)
